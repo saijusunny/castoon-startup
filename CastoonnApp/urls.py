@@ -5,14 +5,16 @@ from django.views.decorators.csrf import csrf_exempt
 urlpatterns = [
     ###################################################################################<<<<<<<<< LANDING MODULE >>>>>>>>>>>>>>>>>
     path('', views.index, name='index'),
+    path('user_type', views.user_type, name='user_type'),
+    path('login_main',views.login_main, name='login_main'),
 
     ################################################################################### <<<<<<<<< CREATOR MODULE >>>>>>>>>>>>>>>>>
     
-    path('login_creator',views.login_creator, name='login_creator'),
+    
 
     ################################################################################### <<<<<<<<< Artist MODULE >>>>>>>>>>>>>>>>>
     
-    path('login_artist',views.login_artist, name='login_artist'),
+
 
     
     ]
